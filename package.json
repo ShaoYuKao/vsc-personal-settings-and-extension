@@ -1,0 +1,60 @@
+{
+  "name": "vsc-personal-settings-and-extension",
+  "displayName": "VS Code Personal Settings and Extension",
+  "description": "Popular Visual Studio Code Settings and extensions for Personal authoring.",
+  "version": "0.1.0",
+  "publisher": "shaoyu",
+  "icon": "images/customer-support.png",
+  "repository": "https://github.com/ShaoYuKao/vsc-personal-settings-and-extension",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vscode-extension",
+    "vscode"
+  ],
+  "categories": [
+    "Extension Packs"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "personalChangeSettings.change",
+      "title": "Personal Change Settings"
+    }],
+    "keybindings": [
+      {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase"
+      },
+      {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase"
+      }
+    ]
+  },
+  "extensionPack": [ 
+    "MS-CEINTL.vscode-language-pack-zh-hant",
+    "ritwickdey.LiveServer",
+    "KevinYang.ctlorem",
+    "PKief.material-icon-theme",
+    "pnp.polacode"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.54.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
