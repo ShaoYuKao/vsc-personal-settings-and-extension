@@ -63,6 +63,18 @@ You need to install the following extensions manually if you need:\
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)\
     這個擴充套件允許你做一個HTTP請求，並在VSCode中直接檢視響應，而不是在兩個應用程式之間切換，這個擴充套件為你做這個工作。
 
+- [JSON to CSV](https://marketplace.visualstudio.com/items?itemName=khaeransori.json2csv)
+    Convert JSON to CSV, and CSV to JSON.
+
+- [Edit csv](https://marketplace.visualstudio.com/items?itemName=janisdd.vscode-edit-csv)
+    extension to edit csv files with a table ui
+
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+    Highlight CSV and TSV files, Run SQL-like queries
+
+- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+    REST Client for Visual Studio Code
+
 ## Extension Settings
 
 ## Preferences Settongs

@@ -2,7 +2,7 @@
   "name": "vsc-personal-settings-and-extension",
   "displayName": "VS Code Personal Settings and Extension",
   "description": "Popular Visual Studio Code Settings and extensions for Personal authoring.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "shaoyu",
   "icon": "images/customer-support.png",
   "repository": "https://github.com/ShaoYuKao/vsc-personal-settings-and-extension",
