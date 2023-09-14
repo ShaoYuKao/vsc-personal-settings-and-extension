@@ -105,10 +105,10 @@ You need to install the following extensions manually if you need:\
 
 - keyboard shortcuts
 
-| 命令                               | 按鍵繫節關係     |
-| ---------------------------------- | ---------------- |
-| editor.action.transformToUppercase | ctrl + shift + u |
-| editor.action.transformToLowercase | ctrl + shift + l |
-
+| 命令                                            | 按鍵繫節關係     | 說明                               |
+| ----------------------------------------------- | ---------------- | ---------------------------------- |
+| editor.action.transformToUppercase              | ctrl + shift + u | 轉換到大寫                         |
+| editor.action.transformToLowercase              | ctrl + shift + l | 轉換到小寫                         |
+| workbench.files.action.showActiveFileInExplorer | shift + alt + l  | 檔案: 在[總管檢視]中顯示使用中檔案 |
 
 **Enjoy!**
