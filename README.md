@@ -25,6 +25,9 @@
 - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)\
     程式碼截圖非常漂亮的話，那麼就是使用這個套件做的，使用方式基本上就是 `F1` 然後輸入 `Polacode` 就可以開始程式碼截圖。
 
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)\
+    微軟 AI 輔助程式碼開發，提供人工智慧輔助的 IntelliSense。 
+
 ## Extensions NOT Included but might be useful
 
 You need to install the following extensions manually if you need:\
@@ -82,10 +85,37 @@ You need to install the following extensions manually if you need:\
 > `File` => `Preferences` => `Settings`
 
 - Terminal 選取預設殼層
-    - Command Prompt：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"`
-    - PowerShell：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"`
-    - Git Bash：`"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"`
-    - Bash on Ubuntu (on Windows)：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe"`
+    > 當 VSCode 升級至 1.57.1(2021.6.17) 時，會出現警告提示：\
+    > 此項已棄用，配置預設 shell 的新推薦方法是在 `#terminal.integrated.profiles.windows#`  中創建一個終端設定檔，並將其設定檔名稱設置為 `#terminal.integrated.defaultProfile.windows#`  中的預設值。此操作當前將優先於新的設定檔設置，但將來會發生更改。\
+    >  ![](./images/20210624163615587.jpg)
+    > - Command Prompt：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"`
+    > - PowerShell：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.> exe"`
+    > - Git Bash：`"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"`
+    > - Bash on Ubuntu (on Windows)：`"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe"`
+
+    新版設定：
+    ```json
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    ```
+    ![](./images/20210624163626653.png)
+    資料來源：https://blog.csdn.net/gaoxiaoba/article/details/118191161
 
 - 個人化全域設定檔
     - `Ctrl + Shift + P` 打開命令面板，然後輸入 "Personal Change Settings" 並執行命令。

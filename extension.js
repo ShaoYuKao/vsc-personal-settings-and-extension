@@ -14,6 +14,9 @@ function activate(context) {
 		// 編輯區字體大小
         configuration.update('editor.fontSize', 16, vscode.ConfigurationTarget.Global);
 
+		// 控制編輯區字體行高。
+		configuration.update('editor.lineHeight', 26, vscode.ConfigurationTarget.Global);
+
 		// 與 Tab 相等的空格數量。
         configuration.update('editor.tabSize', 2, vscode.ConfigurationTarget.Global);
 
@@ -52,6 +55,21 @@ function activate(context) {
 
 		// 離開視窗焦點時自動儲存
 		// configuration.update('files.autoSave', "onWindowChange", vscode.ConfigurationTarget.Global);
+
+		// terminal 字體大小
+		configuration.update('terminal.integrated.fontSize', 16, vscode.ConfigurationTarget.Global);
+
+		// 是否忽略顯示建議的套件
+		// configuration.update('extensions.ignoreRecommendations', true, vscode.ConfigurationTarget.Global);
+
+		// 設定檔案預設編碼
+		// configuration.update('files.encoding', "utf8", vscode.ConfigurationTarget.Global);
+
+		// 檔案儲存的時候，會幫你自動過濾多餘的空格
+		configuration.update('files.trimTrailingWhitespace', true, vscode.ConfigurationTarget.Global);
+
+		// 是否關閉 vscode 歡迎的顯示頁面
+		// configuration.update('workbench.welcome.enabled', false, vscode.ConfigurationTarget.Global);
 	});
 
 	context.subscriptions.push(disposable);
