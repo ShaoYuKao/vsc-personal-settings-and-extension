@@ -26,3 +26,8 @@ All notable changes to the "Visual Studio Code Personal Settings and Extension" 
   - [IntelliCode]
 
 - 新增一些全域設定
+
+## 0.5.0 - 2023-09-25
+
+- Add Extensions
+  - [Office Viewer(Markdown Editor)]

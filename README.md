@@ -28,6 +28,9 @@
 - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)\
     微軟 AI 輔助程式碼開發，提供人工智慧輔助的 IntelliSense。 
 
+- [Office Viewer(Markdown Editor)](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office&fbclid=IwAR0AUecGlpmvlrX_jrKNaO9MYYVV_hKTB6ajjb2rpH4wQHLRA339C1pN9XE)
+    開啟任意 *.md 文件就會直接用「所見即所得」(WYSIWYG) 的方式編輯 Markdown 文件，尤其是在 Markdown 文件中編輯表格有夠方便！👍
+
 ## Extensions NOT Included but might be useful
 
 You need to install the following extensions manually if you need:\

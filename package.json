@@ -45,7 +45,8 @@
     "KevinYang.ctlorem",
     "PKief.material-icon-theme",
     "pnp.polacode",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "VisualStudioExptTeam.vscodeintellicode",
+    "cweijan.vscode-office"
   ],
   "scripts": {
     "lint": "eslint .",
